@@ -25,19 +25,19 @@ c
     {
         ws.close();
         console.log('http://localhost:11111 c close');
-
+        process.exit(1);
     })
     .on('error', function()
     {
         ws.close();
         console.log('http://localhost:11111 c error');
-
+        process.exit(1);
     })
     .on('finish', function()
     {
         ws.close();
         console.log('http://localhost:11111 c finish');
-
+        process.exit(1);
     });
 
 
@@ -421,19 +421,19 @@ var emailPin =
                 {
                     ws.close();
                     console.log('---EmailPin stream c close');
-                    process.exit(1);
+
                 })
                 .on('error', function()
                 {
                     ws.close();
                     console.log('---EmailPin streamc error');
-                    process.exit(1);
+
 
                 })
                 .on('finish', function()
                 {
                     ws.close();
                     console.log('---------EmailPin stream finished ');
-                    process.exit(1);
+
                 });
         });
