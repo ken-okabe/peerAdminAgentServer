@@ -62,7 +62,7 @@ var dcrpt = function(str)
         .plaintext;
 };
 
-var GibberishAES = require('Gibberish-aes');
+var GibberishAES = require('gibberish-aes');
 var getEcr = function(key)
 {
     var ecr = function(obj)

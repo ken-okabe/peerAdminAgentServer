@@ -172,7 +172,7 @@ var emailPin =
                             console.log('email ' + user.email);
                             console.log('key ' + user.key);
 
-                            var GibberishAES = require('Gibberish-aes');
+                            var GibberishAES = require('gibberish-aes');
                             ecr = function(obj)
                             {
                                 var str = JSON.stringify(obj);
